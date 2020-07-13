@@ -15,6 +15,8 @@ Following R packages are used in the development.
 1. install.packages('Boruta') for Random Forest (Boruta)
 2. install.packages('caret') for RFE and RPART
 3. install.packages('relaimpo') for LMG
+4. install.packages('randomForest') for Random Forest implementation
+5. install.packages('TH.data') for datasets used in other packages
 
 <b>References</b>
 
