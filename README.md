@@ -4,7 +4,7 @@
 Modern data sets are often described with far too many variables for practical model building. Usually most of these variables are irrelevant to the predictive modeling, and obviously their relevance is not known in advance. There are several disadvantages of dealing with overlarge feature sets. One is purely technical — dealing with large feature sets slows down algorithms, takes too many resources and is simply inconvenient. Another is even more important — many machine learning algorithms exhibit a decrease of accuracy when the number of variables is significantly higher than optimal. Therefore selection of the small (possibly optimal) feature set ensure best possible predictive modeking results is desirable for practical reasons.
 </p>
 
-In this repository, you will get R code for implementing four paramter importance assessment techniques which are based on some of the most popular machine learning and statistical modeling algorithms. 
+In this repository, you will get R code for implementing four parameter importance assessment techniques which are based on some of the most popular machine learning and statistical modeling algorithms. 
 
 1. Random Forest - Boruta
 2. Decision Tree/ Logistic Regression/ Linear Regression - Recursive Feature Elimination (RFE)
@@ -26,6 +26,10 @@ Following R packages are used in the development.
 
 - Kursa, M. B., Jankowski, A., & Rudnicki, W. R. (2010). Boruta–a system for feature selection. Fundamenta Informaticae, 101(4), 271-285.
 
-<b>Any problem with code?</b>
+<b>Feedback and Questions</b>
+
+Hope you find this code useful. As it turns out different algorithms showed different parameter as important, or at least the degree of importance changed. This need not be a conflict, because each algorithm gives a different perspective of how the parameter can be useful depending on how the kernel estimation function learn independent and dependent parameters.
+
+Please send your questions, comments and feedback to: 
 
 Mail me  👉  anujtiwari.spatial@gmail.com
