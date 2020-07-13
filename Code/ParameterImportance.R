@@ -19,7 +19,6 @@ boruta.df <- attStats(final.boruta)
 class(boruta.df)
 print(boruta.df)
 
-
 library(caret)
 library(randomForest)
 set.seed(123)
@@ -28,7 +27,6 @@ rfe.train <- rfe(traindata[,2:7], traindata[,8], sizes=1:7, rfeControl=control)
 rfe.train
 plot(rfe.train, type=c("g", "o"), cex = 1.0, col = 1:6)
 predictors(rfe.train)
-
 
 library(caret)
 setwd("C:/Data")
@@ -40,8 +38,6 @@ rPartMod <- train( ParameterY ~., data=traindata, method="rpart")
 rpartImp <- varImp(rPartMod)
 print(rpartImp)
 plot(rpartImp, top = 5, main='Variable Importance')
-
-
 
 library(relaimpo)
 setwd("C:/Data")
